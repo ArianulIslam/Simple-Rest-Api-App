@@ -11,7 +11,7 @@ mongoose.Promise = global.Promise;
 const app = express();
 
 app.use(bodyParser.json())
-
+app.use(express.static('public'));
 app.use('/api',routes); 
 
 
